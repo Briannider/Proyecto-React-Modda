@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 
+
 const Cards = () => {
     const data = [
         {
@@ -40,7 +41,7 @@ const Cards = () => {
                         {data.map((item) => {
                             return (
                                 <Card
-                                {...item} key={item.id}                               
+                                    {...item} key={item.id}
                                 />
                             );
                         })}
