@@ -37,18 +37,11 @@ const Cards = () => {
             <main>
                 <section className="container">
                     <div className="row justify-content-center">
-                        {data.map(({ id, name, alt, src, description }) => {
+                        {data.map((item) => {
                             return (
-                                <div className="card col-2 p-0 col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                    <Card
-                                        key={id}
-                                        id={id}
-                                        name={name}
-                                        img={src}
-                                        alt={alt}
-                                        description={description}
-                                    />
-                                </div>
+                                <Card
+                                {...item} key={item.id}                               
+                                />
                             );
                         })}
                     </div>

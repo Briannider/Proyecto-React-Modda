@@ -20,3 +20,9 @@ footer a:hover {
   text-decoration: revert;
   color: #121416;
 }
+
+@media only screen and (max-width: 600px) {
+  footer li {
+    font-size: small;
+  }
+}
