@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import "./Card.css"
+
 
 const Card = (props) => {
     return (
         <>
             <div className="card col-2 p-0 col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src={props.src} alt={props.alt} />
+                <img src={props.img} alt={props.alt} />
                 <h4>{props.name}</h4>
                 <p>{props.description}</p>
                 <button type="button" className="btn btn-dark"><a href="#">Mas info</a></button>
@@ -17,9 +17,10 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
-    id: PropTypes.number,
+    _id: PropTypes.string,
     img: PropTypes.string,
     name: PropTypes.string,
+    alt: PropTypes.string,
     description: PropTypes.string,
 };
 
