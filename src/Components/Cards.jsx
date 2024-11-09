@@ -7,7 +7,7 @@ const Cards = () => {
     React.useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://api-modda-brian.herokuapp.com/products')
+                const response = await fetch('https://api-modda.onrender.com/products')
                 const data = await response.json()
                 setCardData(data)
             } catch (error) {
